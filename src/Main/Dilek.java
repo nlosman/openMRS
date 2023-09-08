@@ -9,7 +9,7 @@ public class Dilek extends BaseDriver {
     @Test
     public void Test1 (){
       driver.get("https://demo.openmrs.org/");
-        WebElement username= driver.findElement(By.cssSelector());
+
 
 
 
