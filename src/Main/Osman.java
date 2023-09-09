@@ -24,7 +24,6 @@ public class Osman extends BaseDriver {
         hke.usernameBox.sendKeys("admin");
         hke.passwordBox.sendKeys("Admin123");
         int randomSecim= (int)(Math.random()*hke.randomLctnBtn.size());
-        System.out.println(randomSecim);
         hke.randomLctnBtn.get(randomSecim).click();
         hke.loginBtn.click();
         hke.registerPatientBtn.click();
