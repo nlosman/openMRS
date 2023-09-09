@@ -25,7 +25,7 @@ public class HastaKayitElements {
     public List<WebElement> randomLctnBtn;
     @FindBy(id = "loginButton")
     public WebElement loginBtn;
-    @FindBy(xpath = "//*[@type='button'][5]")
+    @FindBy(xpath = "//a[contains(@id,'register')]")
     public WebElement registerPatientBtn;
     @FindBy(name = "givenName")
     public WebElement nameGivenBox;
@@ -65,7 +65,35 @@ public class HastaKayitElements {
     public WebElement lastNameShow;
     @FindBy(css = "[class='float-sm-right'] >span")
     public WebElement idText;
+    @FindBy(linkText = " Logout ")
+    public WebElement logoutBtn;
 
+    @FindBy(xpath = "//a[contains(@id,'datamanagement')]")
+    public WebElement dataManagementBtn;
+    @FindBy(className = "icon-group")
+    public WebElement mergePatientBtn;
 
+    @FindBy(id="patient1-text")
+    public WebElement patientID_1Box;
+
+    @FindBy(id="patient2-text")
+    public WebElement patientID_2Box;
+
+    @FindBy(id="confirm-button")
+    public WebElement continueBtn;
+
+    @FindBy(css = "[class='row name']")
+    public WebElement hastaSecimi;
+
+    @FindBy(xpath = "//div[@class='messages-container']//h1")
+    public WebElement cannotMergetext;
+    @FindBy(id="confirm-button")
+    public WebElement yesConBtn;
+
+    @FindBy(xpath = "(//div[@class='float-sm-right'])//span[1]")
+    public WebElement idText_1;
+
+    @FindBy(xpath = "(//div[@class='float-sm-right'])//span[2]")
+    public WebElement idText_2;
 
 }
