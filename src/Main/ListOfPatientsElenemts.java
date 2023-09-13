@@ -17,7 +17,6 @@ public class ListOfPatientsElenemts {
 
     @FindBy(linkText = "Explore OpenMRS 2")
     public WebElement exploreBtn;
-
     @FindBy(linkText = "Enter the OpenMRS 2 Demo")
     public WebElement enterBtn;
     @FindBy(name = "username")
@@ -26,8 +25,18 @@ public class ListOfPatientsElenemts {
     public WebElement password;
     @FindBy(id = "Outpatient Clinic")
     public WebElement location;
-
     @FindBy(id = "loginButton")
     public WebElement loginButton;
 
+    @FindBy(id = "coreapps-activeVisitsHomepageLink-coreapps-activeVisitsHomepageLink-extension")
+    public WebElement openList;
+
+    @FindBy(xpath="//*[@id='patient-search-results-table'] / tbody / tr")
+    public List<WebElement> list;
+
+    @FindBy(id = "patient-search-results-table_info")
+    public WebElement result;
+
+    @FindBy(xpath="//*[@id='patient-search-results-table_paginate'] / span / a")
+    public List<WebElement> pagination;
 }
