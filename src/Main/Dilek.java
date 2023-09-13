@@ -1,45 +1,17 @@
-
 package Main;
 
 import Utility.BaseDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.nio.file.Watchable;
-import java.util.jar.JarException;
-
 public class Dilek extends BaseDriver {
-    @Test(dataProvider = "userData")
-    public void test1(String username, String password) {
-        //username,password
-        driver.get("https://openmrs.org");
-        driver.manage().window().maximize();
-        WebElement demo = driver.findElement(By.linkText("Demo"));
-        demo.click();
+    @Test
+    public void Test1 (){
+      driver.get("https://demo.openmrs.org/");
+        WebElement username= driver.findElement(By.cssSelector());
 
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,1000);");
-
-        WebElement openmrsdemo2 =
-                driver.findElement(By.xpath("//*[@id=\"zak-content\"]/div/div/div/section[8]/div/div/div/div[1]/div/div/a"));
-        openmrsdemo2.click();
-
-        WebElement userName = driver.findElement(By.cssSelector("input[id='username']"));
-        userName.sendKeys(username);
-
-        WebElement passWord = driver.findElement(By.cssSelector("input[name='password']"));
-        passWord.sendKeys(password);
-        WebElement inpatient = driver.findElement(By.id("Inpatient Ward"));
-        inpatient.click();
-
-
-        WebElement login = driver.findElement(By.id("loginButton"));
-        login.click();
 
 
 
@@ -48,19 +20,11 @@ public class Dilek extends BaseDriver {
 
     }
 
-    @DataProvider
-    public Object[][] userdata() {
-        Object[][] data = {
-                {"", ""},
-                {"", "124"},
-                {"adimi", "012"},
-                {"ademn", ""},
-
-        };
-        return data;
 
 
-    }
+
+
+
 
 
 }
