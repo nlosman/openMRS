@@ -39,7 +39,6 @@ public class Dilek extends BaseDriver {
 
         WebElement login = driver.findElement(By.id("loginButton"));
         login.click();
-
     }
 
     @DataProvider
