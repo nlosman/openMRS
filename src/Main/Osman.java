@@ -19,7 +19,7 @@ public class Osman extends BaseDriver {
 
         hke.demoBtn.click();
         hke.openMrsBtn.click();
-        MyFunc.Bekle(3);
+        //MyFunc.Bekle(3);
         hke.openMrsDemoBtn.click();
         hke.usernameBox.sendKeys("admin");
         hke.passwordBox.sendKeys("Admin123");
