@@ -4,13 +4,7 @@
 
     <test name="myTest1">
         <classes>
-            <class name="Main.Osman"> </class>
-        </classes>
-    </test>
-
-    <test name="myTest2">
-        <classes>
-            <class name="Main.Osman_2"> </class>
+            <class name="Main.Main"> </class>
         </classes>
     </test>
 
